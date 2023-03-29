@@ -10,11 +10,14 @@ import { BrowserRouter, Routes, Switch, Route } from 'react-router-dom';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Auth from './login';
 import Home from './Pages/HomePage';
-import Goats from './component/Goats';
+import Feedback from './Pages/Feedback';
+
+// import Locations from './component/Goats';
+import Locations from './Pages/Locations';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './Navigation/Navbar.js';
-import Main from './Pages/Sheeps';
+import Locations from './Pages/Locations';
 // import Goats from './Pages/Goats';
 import WithoutNav from './Navigation/WithoutNav';
 import WithNav from './Navigation/WithNav';
@@ -31,8 +34,10 @@ export default function App() {
         <Route element={<WithNav />}>
           <Route path="/home" element={<Home />} />
 
-          <Route path="/main" element={<Main />} />
-          <Route path="/locations" component={<Goats />} />
+          <Route path="/main" element={<Feedback />} />
+          <Route path="/feedback" element={<Feedback />} />
+
+          <Route path="/locations" component={<Locations />} />
         </Route>
       </Routes>
     </BrowserRouter>

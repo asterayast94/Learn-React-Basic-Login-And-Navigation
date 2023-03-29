@@ -2,7 +2,7 @@ import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { sum, ShowUSerNAme, checkUserLogedInStatus,ShowText } from '../component/sessionManager.js';
-export default function Main(props) {
+export default function Locations(props) {
   checkUserLogedInStatus();
 
 

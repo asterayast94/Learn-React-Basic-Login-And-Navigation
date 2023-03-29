@@ -129,7 +129,7 @@ export default function (props) {
         // alert('Welcome here ' + username);
 
         // window.history.replaceState(null, '', 'Home');
-        location.replace('/Home');
+        location.replace('/home');
         // checkUserLogedInStatus();
       });
   }
